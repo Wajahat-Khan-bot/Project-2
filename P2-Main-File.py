@@ -17,10 +17,9 @@ score = 0
 
 # Question 1
 print("What is the capital city of Canada?")
-answer = input(
-    "(a) Toronto b) Vancouver c) Ottawa d) Montreal) \nAnswer:").lower
+answer = input("(a) Toronto b) Vancouver c) Ottawa d) Montreal) \nAnswer:").lower()
 
-if answer == "ottawa" or "c":
+if answer == "ottawa" or answer == "c":
     print("Correct!")
     score += 2
 else:
@@ -31,7 +30,7 @@ else:
 # Question 2
 print("What is the chemical symbol for gold?")
 answer = input("a) Au  b) Ag  c) Pb  d) Fe \nAnswer:").lower()
-if answer == "Au" or "a":
+if answer == "Au" or answer == "a":
     print("Correct!")
     score += 2
 
@@ -43,7 +42,7 @@ else:
 print("Who was the first president of the United States?")
 answer = input(
     "a) Thomas Jefferson b) Benjamin Franklin c) George Washington d) Abraham Lincoln \nAnswer:").lower()
-if answer == "c) George Washington" or "c":
+if answer == "c) George Washington" or answer == "c":
     print("Correct!")
     score += 2
 
@@ -51,4 +50,4 @@ else:
     print("Incorrect!")
     score -= 0.5
 
-print(score)
+print("Your final score is ",score)
